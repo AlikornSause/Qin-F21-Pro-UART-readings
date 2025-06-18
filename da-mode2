@@ -1,0 +1,695 @@
+
+F0: 102B 0000
+F3: 0000 0000 [0200]
+V0: 0000 0000 [0001]
+00: 0000 0000
+BP: 0800 0041 [0000]
+G0: 0090 0000
+EC: 0000 0000 [0001]
+CC: 0000 0000 [0001]
+T0: 0000 0103 [000F]
+Jump to BL
+
+
+sPL_LOG_STORE: check once, sig value 0x9E31368, addr 0x102180.
+PL_LOG_STORE:sram->sig value 0x58538EEB!
+PL_LOG_STORE:sram header is not match, format all!
+PL_LOG_STORE:set ram_header->sig = 0xABCD1234
+ramrom delsel: 0x06C4E4F3
+bandgap ref vol: 0x302012A8
+Pll init start...
+Pll init Done!
+[RGU] rst from: ?
+[RGU] MODE:               0x4D
+[RGU] STA:                0x0
+[RGU] LENGTH:             0xFFE0
+[RGU] INTERVAL:           0xFFF
+[RGU] SWSYSRST:           0x8000
+[RGU] LATCH_CTL:          0x0
+[RGU] NONRST_REG:         0x0
+[RGU] NONRST_REG2:        0x20000000
+[RGU] DEBUG_CTL:          0x200F1
+[RGU] parse g_rgu_status: 0 (0x0)
+[RGU] Set NONRST_REG to 0x0
+[RGU] mtk_wdt_mode_config mode value=30, tmp:22000030
+[RGU] mtk_wdt_mode_config mode value=7D, tmp:2200007D
+[RGU] mtk_wdt_reset_deglitch_enable: MTK_WDT_RSTDEG_EN1(8000A357), MTK_WDT_RSTDEG_EN2(800067D2)
+[RGU] rgu_update_reg: 0, bits: 0xC000, addr: 0x10007040, val: 0x200F1
+[RGU] rgu_update_reg: 0, bits: 0x300, addr: 0x100070A0, val: 0xFF
+[RGU] mtk_wdt_pre_init: MTK_WDT_DEBUG_CTL(0x200F1)
+[RGU] mtk_wdt_pre_init: MTK_WDT_DEBUG_CTL2(0xFF)
+[RGU] mtk_wdt_pre_init: MTK_WDT_LATCH_CTL(0x21E71)
+[RGU] mtk_wdt_pre_init: MTK_WDT_REQ_MODE(3F0032), MTK_WDT_REQ_IRQ_EN(3F0032)
+[PWRAP] si_en_sel = 0, si_ck_sel = 0, si_sample_ctrl = 0, rdata = 96A9
+[PWRAP] si_en_sel = 0, si_ck_sel = 1, si_sample_ctrl = 20, rdata = 5AA5, Pass
+[PWRAP] InitSiStrobe (5, 5, DB65) Data Boundary Is Found !!
+[PWRAP] SI Strobe Calibration For PMIC 0 Done, (40, 5)
+[PWRAP] Read Test pass, return_value=0x0
+[PWRAP] Write Test pass
+[PWRAP] RECORD_CMD0:  0x0 (Last one command addr)
+[PWRAP] RECORD_WDATA0:0x0 (Last one command wdata)
+[PWRAP] RECORD_CMD1:  0x0 (Last second command addr)
+[PWRAP] RECORD_WDATA1:0x0 (Last second command wdata)
+[PWRAP] RECORD_CMD2:  0x0 (Last third command addr)
+[PWRAP] RECORD_WDATA2:0x0 (Last third command wdata)
+[PWRAP] init pass, ret=0.
+
+DATE_CODE_YY:0, DATE_CODE_WW:0
+[SegCode] Segment Code:0x80, PROJECT_CODE:0x0, FAB_CODE:0x0, RW_STA:0x0, CTL:0x0, DCM:0x4
+[PMIC]Preloader Start
+[PMIC]MT6357 CHIP Code = 0x5721, mrv=1
+[PMIC]POWER_HOLD :0x1
+[PMIC]TOP_RST_STATUS[0x152]=0x0
+[PMIC]PONSTS[0xC]=0x4
+[PMIC]POFFSTS[0xE]=0x0
+[PMIC]PGSTATUS0[0x14]=0xFFFE
+[PMIC]PSOCSTATUS[0x16]=0x0
+[PMIC]BUCK_OC_SDN_STATUS[0x1434]=0x0
+[PMIC]BUCK_OC_SDN_EN[0x1444]=0x21F
+[PMIC]THERMALSTATUS[0x18]=0x0
+[PMIC]STRUP_CON4[0xA1C]=0x0
+[PMIC]TOP_RST_MISC[0x14C]=0x200
+[PMIC]TOP_CLK_TRIM[0x38E]=0x6AC0
+latch VPROC 800000 uV
+latch VSRAM_PROC 1068750 uV
+latch VSRAM_OTHERS 900000 uV
+latch VCORE 800000 uV
+latch VMODEM 800000 uV
+[pmic_check_rst] PORSTB
+[PMIC]just_rst = 0
+No EFUSE SW Load
+battery exists
+[PMIC]disable usbdl wo battery
+[PMIC]pmic_wdt_set Reg[0x14C]=0x221
+[rt5738_driver_probe]
+[I2C] 365: id=3,addr: 57, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 57, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 57, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[rt5738_hw_component_detect] exist = 0, Chip ID = 304
+[rt5738_driver_probe] PL rt5738_vdd2 is not exist
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[rt5738_hw_component_detect] exist = 0, Chip ID = 304
+[rt5738_driver_probe] PL rt5738_vddq is not exist
+[hl7593_driver_probe]
+[I2C] 365: id=3,addr: 57, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[hl7593_read_interface] Reg[3]=0x3
+[hl7593_read_interface] val=0x3
+[I2C] 365: id=3,addr: 57, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[hl7593_read_interface] Reg[4]=0x4
+[hl7593_read_interface] val=0x4
+[I2C] 365: id=3,addr: 57, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[hl7593_read_interface] Reg[5]=0x5
+[hl7593_read_interface] val=0x0
+PGOOD = 0, chip_id = 772
+[hl7593_hw_component_detect] exist = 0, Chip ID = 304
+[hl7593_driver_probe] PL hl7593_vdd2 is not exist
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[hl7593_read_interface] Reg[3]=0x3
+[hl7593_read_interface] val=0x3
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[hl7593_read_interface] Reg[4]=0x4
+[hl7593_read_interface] val=0x4
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[hl7593_read_interface] Reg[5]=0x5
+[hl7593_read_interface] val=0x0
+PGOOD = 0, chip_id = 772
+[hl7593_hw_component_detect] exist = 0, Chip ID = 304
+[hl7593_driver_probe] PL hl7593_vddq is not exist
+[fan53526_driver_probe]
+[I2C] 365: id=3,addr: 60, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=C0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 60, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=C0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 60, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=C0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[fan53526_hw_component_detect] exist = 0, Chip ID = 304
+[fan53526_driver_probe] PL fan53526_vdd2 is not exist
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 50, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[fan53526_hw_component_detect] exist = 0, Chip ID = 304
+[fan53526_driver_probe] PL fan53526_vddq is not exist
+register vs1 OK
+register vmodem OK
+register vcore OK
+register vproc OK
+register vpa OK
+register vsram_others OK
+register vsram_proc OK
+register vdram OK
+[PMIC]Init done
+[SD0] Host controller intialization start
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(0) DDR(0) DIV(385) DS(0) RS(0)
+[SD0] Host controller intialization done
+[mmc_init]: msdc0 start mmc_init_card()
+[mmc_init_card]: start
+[SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[SD0] Switch to High-Speed mode!
+[SD0] Switch to DDR buswidth
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+[SD0] Size: 29820 MB, Max.Speed: 52000 kHz, blklen(512), nblks(61071360)
+[SD0] Initialized, eMMC45
+[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+[mmc_init_card]: finish successfully
+[PLFM] Init Boot Device: OK(0)
+metadata.slot_info[0].priority = 15, 14
+metadata.slot_info[0].retry = 1, 1
+[SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[AB] Current boot: Preloader_a
+[AB] ab_suffix: _a, ab_retry: 1
+[AB] boot_success is 1!
+[PLFM] Init PWRAP: OK(0)
+[PLFM] Init PMIC: OK(0)
+[PLFM] chip_hw_ver[CA01], chip_sw_ver[1]
+
+[BLDR] Build Time: 20211028-210543
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x6B6D 386A AD00 9829 A2B5 A19A A8AA 11 1
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 386A 8000 98E9 A2B5 A2AA 9455 11 0
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]RTC 32K mode setting wrong. Enter first boot/recovery. 
+[RTC]rtc_init#1 powerkey1 = 0xBC5B, powerkey2 = 0xFDFC, with LPD
+[RTC]bbpu = 0x4F, con = 0xAB53, osc32con = 0xBD79, sec = 0xBBBF, yea = 0xA77D
+[RTC]rtc_first_boot_init
+[RTC]XO_XMODE_M = 1 , XO_EN32K_M = 1
+[RTC]rtc_lpd_init RTC_CON=0x486
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=3303
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=3304
+[RTC]eosc_cali: RG_FQMTR_CKSEL=0x42
+[RTC]get_frequency_meter: input=0xF, ouput=932
+[RTC]eosc_cali: val=0x3A4
+[RTC]get_frequency_meter: input=0x7, ouput=789
+[RTC]eosc_cali: val=0x315
+[RTC]get_frequency_meter: input=0xB, ouput=860
+[RTC]eosc_cali: val=0x35C
+[RTC]get_frequency_meter: input=0x9, ouput=825
+[RTC]eosc_cali: val=0x339
+[RTC]get_frequency_meter: input=0x8, ouput=806
+[RTC]eosc_cali: val=0x326
+[RTC]get_frequency_meter: input=0x7, ouput=788
+[RTC]get_frequency_meter: input=0x8, ouput=806
+[RTC]EOSC cali val = 0x7
+[RTC]EOSC cali val = 0xDE47
+[RTC]rtc_lpd_init RTC_CON=0x486
+[RTC]rtc_2sec_stat_clear
+[RTC]XO_XMODE_M = 1 , XO_EN32K_M = 1
+[RTC]32k-less mode
+[RTC]rtc_2sec_reboot_check 0x6439, without 2sec reboot, type 0x2
+[RTC]rtc 2sec reboot is not enabled
+[RTC]rtc_lpd_init RTC_CON=0x486
+[PMIC] pmic_init_setting end. v180413
+[MT6357] 1 6,61
+[MT6357] 1 2,45
+[MT6357] 1 1,48
+[MT6357] get volt 5, 61, 900000
+vsram_others = 900000 uV
+[MT6357] get volt 3, 45, 800000
+vproc = 800000 uV
+[MT6357] get volt 6, 61, 900000
+vsram_proc = 900000 uV
+[MT6357] get volt 2, 45, 800000
+vcore = 800000 uV
+[MT6357] get volt 1, 48, 800000
+vmodem = 800000 uV
+[MT6357] 2 6,1
+[MT6357] 2 5,1
+[MT6357] 2 3,1
+[MT6357] 2 2,1
+[MT6357] 2 1,1
+[RGU] EMI_DCS_SUCCESS 0
+[RGU] DVFSRC_SUCCESS 0
+[DDR Reserve] ddr reserve mode not be enabled yet
+[RGU] mtk_wdt_mode_config mode value=30, tmp:22000030
+[RGU] mtk_wdt_mode_config mode value=7D, tmp:2200007D
+[RGU] g_rgu_status: 0 (0x0)
+[RGU] bypass pwrkey: wdt does not trigger rst
+Enter mtk_kpd_gpio_set! 
+after set KP enable: KP_SEL = 0x1C70 !
+[RTC]irqsta = 0x0, pdn1 = 0x0, pdn2 = 0x201, spar0 = 0x80, spar1 = 0x800
+[RTC]new_spare0 = 0x4000, new_spare1 = 0x5001, new_spare2 = 0x1, new_spare3 = 0x1
+[RTC]bbpu = 0x1, con = 0x486, cali = 0x2439, osc32con = 0xDE67
+[PMIC]IsUsbCableIn 1
+[PLFM] USB/charger boot!
+[PMIC]POWER_HOLD :0x1
+[RTC]rtc_lpsd_solution
+[RTC]1st RTC_AL_MASK= 0x0 
+[RTC]2nd RTC_AL_MASK= 0x7F 
+[RTC]rtc_bbpu_power_on done
+pl chr:1 monitor:1 plchr:1 gain:1046
+mtk_kpd_gpio_set Already!
+Log Turned Off.
+i2c hw init done
+
+ log_level=2(0:trace, 1:debug, 2:info, 3:warning, 4:error, 5:fatal)
+
+ log_channel=1(0:none, 1:uart, 2:usb, 3:uart_usb)
+
+ system_os=1(0:windows, 1:linux)
+
+ ufs_provision=0(0:default, 1:force, 2:skip)
+
+Have 0 hw init parameters.
+
+cmd_set_hw_init_parameter finish.
+
+DA build time : Jul  3 2022 15:20:34
+
+***1.Enter DA_init.***
+
+***1-1.heap_init.***
+
+***1-2.pll_init_pass.***
+
+***2.platform_early_init.***
+
+  2-1.disable watch dog.
+
+  2-2.disable_Charger.
+
+***3.init system objects.***
+
+***4.It is PRELOADER MODE.***
+
+***5.sync with PC Pass.*** 
+
+***6.gpt_init pass.***
+
+***7.Skip pmic_init In Preloader Mode.***
+
+***9.platform_init start.***
+
+11-1.low_power init pass.
+
+11-2.set the reset key pass.
+  mmc_init start.
+  mmc init ok.
+
+11-3.device_mmc init pass.
+  mmc partition[1], size:0x400000
+  mmc partition[2], size:0x400000
+  mmc partition[3], size:0x400000
+  mmc partition[4], size:0x0
+  mmc partition[5], size:0x0
+  mmc partition[6], size:0x0
+  mmc partition[7], size:0x0
+  mmc partition[8], size:0x747c00000
+  mmc_health_info[0], value:0x1
+  mmc_health_info[1], value:0x1
+  mmc_health_info[2], value:0x1
+  emmc_info.type=0x1
+dram_baseaddr=0x40000000
+dram_max_size=0x40 GB
+MMU MAP: VA 0x0,  Length:0x40000000 to PA: 0x0
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x40000000
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x40000000
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x100000000
+dram_type: 1
+dram_baseaddress: 0x40000000, dram_size: 0xc0000000
+
+***9.platform_init pass.***
+
+***10.dagent_register_commands pass.***
+
+***11.notify host DA is ready to execute commands.***
+
+***12.dagent_command_loop:***
+
+
+***(0.)Enter devc_set_reset_key cmd*** 
+
+reset_key=0x68(0x68:two key,0x50:one key)
+
+
+***(1.)Enter devc_set_checksum_level cmd*** 
+
+checksum_level=0(usb.emmc.both)
+
+
+***(2.)Enter devc_get_connection_agent cmd*** 
+
+it is preloader mode
+
+
+***(3.)Enter cmd_boot_to cmd*** 
+
+DA hash validation....
+da_loop code_length = 0x512fc
+at_address = 0x40000000
+
+DA verify pass and jump to DRAM
+
+
+***0.Enter DA_loop.***
+GIC_REDIS_BASE: 0xc080000
+
+***1.kmain-platform_early_init pass(irq)***
+
+***2.kmain-thread_init_early pass***
+MMU MAP: VA 0x0,  Length:0x40000000 to PA: 0x0
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x40000000
+
+***3.kmain-arch_early_init pass***
+
+***7.timer_init***
+
+***8.monitor_thread_resume***
+
+***9.thread_resume***
+
+***10.exit_critical_section
+
+***8.Enter bootstrap2***
+
+DRAM address: 0x40000000, size: 0xc0000000
+runtime_params:0x0, 0x2,0x1,0x8000,0x8000,0x2000000
+
+***9.platform_init***
+  mmc_init start.
+  mmc init ok.
+
+11-3.device_mmc init pass.
+  mmc partition[1], size:0x400000
+  mmc partition[2], size:0x400000
+  mmc partition[3], size:0x400000
+  mmc partition[4], size:0x0
+  mmc partition[5], size:0x0
+  mmc partition[6], size:0x0
+  mmc partition[7], size:0x0
+  mmc partition[8], size:0x747c00000
+  mmc_health_info[0], value:0x1
+  mmc_health_info[1], value:0x1
+  mmc_health_info[2], value:0x1
+  emmc_info.type=0x1
+
+ skip security.
+
+***9.platform_init pass***
+
+***10.dagent_register_commands.
+
+***11.notify host DA is ready to execute commands.
+
+
+***(0.)Enter devc_get_sla_enabled_status cmd*** 
+
+
+
+***(1.)Enter devc_get_ram_info cmd*** 
+
+sysob_ram.sram,type=2,base_address=200000,size=3a600
+sysob_ram.dram,type=1,base_address=40000000,size=c0000000
+
+
+***(2.)Enter devc_get_emmc_info cmd*** 
+
+emmc_type=1
+boot1 size=400000
+boot2_size=400000
+user_size=747c00000
+
+
+***(3.)Enter devc_get_nand_info cmd*** 
+
+
+
+***(4.)Enter devc_get_nor_info cmd*** 
+
+
+
+***(5.)Enter devc_get_ufs_info cmd*** 
+
+
+
+***(6.)Enter devc_get_chip_baseband cmd*** 
+
+hw _code(0x717)
+hw_sub_code(0x8a00)
+hw_version(0xca01)
+sw_version(0x200)
+
+
+***Enter devc_get_version***
+
+
+
+***DA version is 1.0.
+
+
+***(7.)Enter devc_get_random_id cmd*** 
+
+random_id=0xaf, 0x47, 0xbb, 0x48.
+
+
+***(8.)Enter devc_get_usb_speed cmd*** 
+
+devc_get_usb_speed: high-speed
+
+
+***(9.)Enter cmd_boot_to cmd*** 
+
+DA hash validation....
+da_loop code_length = 0x2184
+at_address = 0x68000000
+
+DA verify pass and jump to DRAM
+
+
+
+***(10.)Enter devc_get_packet_length cmd*** 
+
+write_packet_length = 200000 
+read_packet_length = 10000 
+
+
+***(11.)Enter cmd_read_data cmd*** 
+
+
+cmd_read_data: storage=1, section=8
+base_addr=0,max_size=400
+[check_parameter] 1
+enable_storage_read, storage type = 1, section = 8
+enable_storage_read, start addr = 0x0, length = 0x400
+initial_chksum_info: prepare for checksum.
+*********************************SPEED DUMP*************************************
+[Overview]total size: 1 KBytes | total time: 1 ms | avarage speed: 0 MBps
+************************************DUMP END************************************
+Process upload_data
+
+
+***(12.)Enter devc_get_packet_length cmd*** 
+
+write_packet_length = 200000 
+read_packet_length = 10000 
+
+
+***(13.)Enter cmd_read_data cmd*** 
+
+
+cmd_read_data: storage=1, section=8
+base_addr=0,max_size=4400
+[check_parameter] 1
+enable_storage_read, storage type = 1, section = 8
+enable_storage_read, start addr = 0x0, length = 0x4400
+info list exist, skip to create...
+*********************************SPEED DUMP*************************************
+[Overview]total size: 17 KBytes | total time: 3 ms | avarage speed: 5 MBps
+[USB Write]usb total size: 17 KBytes | write time: 2 ms | write speed: 8 MBps
+************************************DUMP END************************************
+Process upload_data
+

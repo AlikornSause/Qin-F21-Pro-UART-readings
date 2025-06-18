@@ -1,0 +1,282 @@
+[DL] 00001388 00000000 010303
+Entered mt6761 brom patcher
+Copyright k4y0z/bkerler 2021
+R:USB
+S:ACK
+W:Handshake
+....
+A:Handshake
+
+
+i2c hw init done
+
+ log_level=2(0:trace, 1:debug, 2:info, 3:warning, 4:error, 5:fatal)
+
+ log_channel=1(0:none, 1:uart, 2:usb, 3:uart_usb)
+
+ system_os=1(0:windows, 1:linux)
+
+ ufs_provision=0(0:default, 1:force, 2:skip)
+
+Have 0 hw init parameters.
+
+cmd_set_hw_init_parameter finish.
+
+DA build time : Jul  3 2022 15:20:34
+
+***1.Enter DA_init.***
+
+***1-1.heap_init.***
+
+***1-2.pll_init_pass.***
+
+***2.platform_early_init.***
+
+  2-1.disable watch dog.
+
+  2-2.disable_Charger.
+
+***3.init system objects.***
+
+***4.It is BROM MODE.***
+
+***5.sync with PC Pass.*** 
+
+***6.gpt_init pass.***
+
+***7.pmic_init pass.***
+
+***8.release_dram pass.***
+
+***9.platform_init start.***
+
+11-1.low_power init pass.
+
+11-2.set the reset key pass.
+  mmc_init start.
+  mmc init ok.
+
+11-3.device_mmc init pass.
+  mmc partition[1], size:0x400000
+  mmc partition[2], size:0x400000
+  mmc partition[3], size:0x400000
+  mmc partition[4], size:0x0
+  mmc partition[5], size:0x0
+  mmc partition[6], size:0x0
+  mmc partition[7], size:0x0
+  mmc partition[8], size:0x747c00000
+  mmc_health_info[0], value:0x1
+  mmc_health_info[1], value:0x1
+  mmc_health_info[2], value:0x1
+  emmc_info.type=0x1
+
+***9.platform_init pass.***
+
+***10.dagent_register_commands pass.***
+
+***11.notify host DA is ready to execute commands.***
+
+***12.dagent_command_loop:***
+
+
+***(0.)Enter devc_set_reset_key cmd*** 
+
+reset_key=0x68(0x68:two key,0x50:one key)
+
+
+***(1.)Enter devc_set_checksum_level cmd*** 
+
+checksum_level=0(usb.emmc.both)
+
+
+***(2.)Enter devc_get_connection_agent cmd*** 
+
+it is brom mode
+
+
+***(3.)Enter cmd_init_dram cmd*** 
+
+emi id= MTK_BLOADER_INFO_v38 , emi_count: 14
+sizeof(EMI_SETTINGS): 0xa0
+v_emi_settings->sub_version = 0x1
+EMI_TAG_Version == 38, Using preloader tag
+num_of_emi_records = 14
+emi_num(14), bl_info_len(0x70)
+dram_baseaddr=0x40000000
+dram_max_size=0x40 GB
+MMU MAP: VA 0x0,  Length:0x40000000 to PA: 0x0
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x40000000
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x40000000
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x100000000
+init dram pass
+dram_type: 1
+dram_baseaddress: 0x40000000, size: 0xc0000000
+
+
+***(4.)Enter cmd_boot_to cmd*** 
+
+DA hash validation....
+da_loop code_length = 0x512fc
+at_address = 0x40000000
+
+DA verify pass and jump to DRAM
+
+
+***0.Enter DA_loop.***
+GIC_REDIS_BASE: 0xc080000
+
+***1.kmain-platform_early_init pass(irq)***
+
+***2.kmain-thread_init_early pass***
+MMU MAP: VA 0x0,  Length:0x40000000 to PA: 0x0
+MMU MAP: VA 0x40000000,  Length:0xc0000000 to PA: 0x40000000
+
+***3.kmain-arch_early_init pass***
+
+***7.timer_init***
+
+***8.monitor_thread_resume***
+
+***9.thread_resume***
+
+***10.exit_critical_section
+
+***8.Enter bootstrap2***
+
+DRAM address: 0x40000000, size: 0xc0000000
+runtime_params:0x0, 0x2,0x1,0x8000,0x8000,0x2000000
+
+***9.platform_init***
+  mmc_init start.
+  mmc init ok.
+
+11-3.device_mmc init pass.
+  mmc partition[1], size:0x400000
+  mmc partition[2], size:0x400000
+  mmc partition[3], size:0x400000
+  mmc partition[4], size:0x0
+  mmc partition[5], size:0x0
+  mmc partition[6], size:0x0
+  mmc partition[7], size:0x0
+  mmc partition[8], size:0x747c00000
+  mmc_health_info[0], value:0x1
+  mmc_health_info[1], value:0x1
+  mmc_health_info[2], value:0x1
+  emmc_info.type=0x1
+
+ skip security.
+
+***9.platform_init pass***
+
+***10.dagent_register_commands.
+
+***11.notify host DA is ready to execute commands.
+
+
+***(0.)Enter devc_get_sla_enabled_status cmd*** 
+
+
+
+***(1.)Enter devc_get_ram_info cmd*** 
+
+sysob_ram.sram,type=2,base_address=200000,size=3a600
+sysob_ram.dram,type=1,base_address=40000000,size=c0000000
+
+
+***(2.)Enter devc_get_emmc_info cmd*** 
+
+emmc_type=1
+boot1 size=400000
+boot2_size=400000
+user_size=747c00000
+
+
+***(3.)Enter devc_get_nand_info cmd*** 
+
+
+
+***(4.)Enter devc_get_nor_info cmd*** 
+
+
+
+***(5.)Enter devc_get_ufs_info cmd*** 
+
+
+
+***(6.)Enter devc_get_chip_baseband cmd*** 
+
+hw _code(0x717)
+hw_sub_code(0x8a00)
+hw_version(0xca01)
+sw_version(0x200)
+
+
+***Enter devc_get_version***
+
+
+
+***DA version is 1.0.
+
+
+***(7.)Enter devc_get_random_id cmd*** 
+
+random_id=0xaf, 0x47, 0xbb, 0x48.
+
+
+***(8.)Enter devc_get_usb_speed cmd*** 
+
+devc_get_usb_speed: high-speed
+
+
+***(9.)Enter cmd_boot_to cmd*** 
+
+DA hash validation....
+da_loop code_length = 0x2184
+at_address = 0x68000000
+
+DA verify pass and jump to DRAM
+
+
+
+***(10.)Enter devc_get_packet_length cmd*** 
+
+write_packet_length = 200000 
+read_packet_length = 10000 
+
+
+***(11.)Enter cmd_read_data cmd*** 
+
+
+cmd_read_data: storage=1, section=8
+base_addr=0,max_size=400
+[check_parameter] 1
+enable_storage_read, storage type = 1, section = 8
+enable_storage_read, start addr = 0x0, length = 0x400
+initial_chksum_info: prepare for checksum.
+*********************************SPEED DUMP*************************************
+[Overview]total size: 1 KBytes | total time: 1 ms | avarage speed: 0 MBps
+************************************DUMP END************************************
+Process upload_data
+
+
+***(12.)Enter devc_get_packet_length cmd*** 
+
+write_packet_length = 200000 
+read_packet_length = 10000 
+
+
+***(13.)Enter cmd_read_data cmd*** 
+
+
+cmd_read_data: storage=1, section=8
+base_addr=0,max_size=4400
+[check_parameter] 1
+enable_storage_read, storage type = 1, section = 8
+enable_storage_read, start addr = 0x0, length = 0x4400
+info list exist, skip to create...
+*********************************SPEED DUMP*************************************
+[Overview]total size: 17 KBytes | total time: 3 ms | avarage speed: 5 MBps
+[USB Write]usb total size: 17 KBytes | write time: 2 ms | write speed: 8 MBps
+************************************DUMP END************************************
+Process upload_data
+
