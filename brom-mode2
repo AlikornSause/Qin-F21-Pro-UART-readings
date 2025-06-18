@@ -1,3 +1,13 @@
+#[	QIN F21 PRO		]#
+#[	UART LOG READ		]#	
+#[	TX / GND		]#
+#[	AlikornSause, 2025	]#
+
+# connecting to mtkclient in BROM mode
+
+# brom-mode 1
+
+############ 115200 BAUD LOG ############
 [DL] 00001388 00000000 010303
 Entered mt6761 brom patcher
 Copyright k4y0z/bkerler 2021
@@ -7,7 +17,7 @@ W:Handshake
 ....
 A:Handshake
 
-
+############ 921600 BAUD LOG ############
 i2c hw init done
 
  log_level=2(0:trace, 1:debug, 2:info, 3:warning, 4:error, 5:fatal)

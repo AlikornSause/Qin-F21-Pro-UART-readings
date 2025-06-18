@@ -1,3 +1,13 @@
+#[	QIN F21 PRO		]#
+#[	UART LOG READ		]#	
+#[	TX / GND		]#
+#[	AlikornSause, 2025	]#
+
+# normal boot process
+
+# normal 2
+
+############ 115200 BAUD LOG ############
 \0
 F0: 102B 0000
 F3: 0000 0000 [0200]
@@ -10,6 +20,7 @@ CC: 0000 0000 [0001]
 T0: 0000 0106 [000F]
 Jump to BL
 
+############ 921600 BAUD LOG ############
 sPL_LOG_STORE: check once, sig value 0x9E313E8, addr 0x102180.
 PL_LOG_STORE:sram->sig value 0x58538EEB!
 PL_LOG_STORE:sram header is not match, format all!
